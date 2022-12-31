@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="assets/svgs/alura_favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style_M.css" />
+  </head>
+  <body>
+    <div id="Contenedor">
+      <div id="Logo">
+        <img id="log-alu" src="assets/svgs/alura_logo.svg" alt="" />
+      </div>
+
+      <div id="Entradas">
+        <div id="Texto">
+          <textarea
+            id="int-txt"
+            rows="4"
+            cols="50"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+
+        <div id="Pie">
+          <object
+            id="img-exclama"
+            data="assets/svgs/exclamacion.svg"
+            width="18px"
+            height="18px"
+          ></object>
+          Solo letras minúsculas y sin acentos.
+        </div>
+
+        <div id="Botones">
+          <button id="btn-encript" onclick="Encriptar()">Encriptar!</button>
+          <button id="btn-desencript" onclick="Desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+
+      <div id="Salidas">
+        <div id="Mensaje">
+          <div id="cn_msg"></div>
+
+          <div id="sn_msg">
+            <object
+              id="img-ilustracion"
+              data="assets/svgs/ilustracion.svg"
+            ></object>
+            <h3 id="msg-snTxt">Ningún mensaje fue encontrado</h3>
+            <p id="pre-encript-txt">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </div>
+        <div id="Copia">
+          <button id="btn-copiar" onclick="Copiar()">Copiar</button>
+        </div>
+      </div>
+    </div>
+    <script src="JavaScript/js_main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+:root {
+  --color-fondo-diamante: rgb(51, 204, 204, 0.2);
+  --color-contorno-diamante: rgb(51, 204, 204);
+}
+
+#diamante-junto{
+  fill: var(--color-fondo-diamante);
+}
+
+#D-lin-0, #D-lin-1, #D-lin-2, #D-lin-3, #D-lin-4, #D-lin-5, #D-lin-6, 
+#D-lin-7, #D-lin-8, #D-lin-9, #D-lin-10, #D-lin-11, #D-lin-12, #D-lin-13, 
+#D-lin-13, #D-lin-14, #D-lin-15, #D-lin-16, #D-lin-17{
+  fill: var(--color-contorno-diamante);
+}
+
+#D-des-0, #D-des-1, #D-des-2{
+  fill: none;
+  animation: destello 5s infinite ease-out;
+  animation-fill-mode: forwards;
+}
+
+#diamante-junto, #D-lin-0, #D-lin-1, #D-lin-2, #D-lin-3, #D-lin-4, #D-lin-5, #D-lin-6, 
+#D-lin-7, #D-lin-8, #D-lin-9, #D-lin-10, #D-lin-11, #D-lin-12, #D-lin-13, 
+#D-lin-13, #D-lin-14, #D-lin-15, #D-lin-16, #D-lin-17{
+  animation: desplazamiento 5s infinite ease-out;
+}
+
+@keyframes destello {
+  0% {
+  fill: rgb(0, 0, 0);
+  transform: translateY(0px);
+  }
+  50% {
+  fill: rgba(255, 0, 0, 0);
+
+  transform: translateY(5px);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+
+    transform: translateY(0px);
+    }
+}
+
+
+@keyframes desplazamiento {
+  0% {
+  transform: translateY(0px);
+  }
+  50% {
+  transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0px);
+    }
+}

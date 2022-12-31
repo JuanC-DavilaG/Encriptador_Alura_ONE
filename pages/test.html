@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_test.css">
+    <title>🚧TEST🚧</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="logo">
+            <img id="log-alu" src="../assets/svgs/alura_logo.svg" alt="">
+        </div>
+
+        <div id="Entradas">
+
+            <div id="Texto">
+                <!-- <input id="int-txt" type="text" placeholder="Ingrese el texto aqui"> -->
+                <textarea id="int-txt" rows="4" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div id="Pie">
+                <!-- <img id="img-exclama" src="../assets/svgs/interrogacion.svg" alt=""> -->
+                <!-- <div id="icono"> -->
+                    <object id="img-exclama" data="../assets/svgs/interrogacion.svg" width="18px" height="18px"></object>
+                <!-- </div> -->
+                    Solo letras minúsculas y sin acentos
+                <!-- <p id="leyenda">Solo letras minúsculas y sin acentos</p> -->
+            </div>
+
+            <div id="Botones">
+                <button id="btn-encript" onclick="Encriptar()">Encriptar!</button>
+                <button id="btn-desencript" onclick="Desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div id="Salidas">
+            <div id="Mensaje">
+
+                <div id="cn_msg">
+
+                    <!-- <div id="Copia">
+                        <button id="btn-copiar" onclick="Copiar()">Copiar</button>
+                    </div> -->
+                </div>
+
+                <div id="sn_msg">
+                    <!-- <img id="img-muñeco" src="../assets/svgs/ilustracion.svg" alt=""> -->
+                    <object data="../assets/svgs/ilustracion.svg" ></object>
+                    <h3 id="msg-snTxt">Ningún mensaje fue encontrado</h3>
+                    <p id="pre-encript-txt">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div id="Copia">
+                <button id="btn-copiar" onclick="Copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/js_main.js"></script>
+</body>
+</html>

@@ -1,8 +1,6 @@
 @import url("../styles/reset/style_reset.css");
 
 body{
-    /* margin: 0;
-    padding: 0; */
     background-color: #E5E5E5;
 }
 
@@ -18,22 +16,17 @@ body{
     padding-top: 1%;
     top: 0;
     bottom: 0;
-    /* background-color: red; */
     text-align: center;
     float: left;
+
+    /* background-color: red; */
 }
 
 #log-alu{
     display: inline;
-    /* position: relative; */
-    left: 70%;
-    /* transition: 2s; */
-    /* animation-fill-mode: forwards; */
-}
+    left: 70%;}
 
 #log-alu:hover{
-    /* transition: 2s; */
-    /* transform: rotate(360deg); */
     animation: aparece 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -52,6 +45,7 @@ body{
     width: 65%;
     height: 98vh;
     float: left;
+
     /* background-color: blue; */
 }
 
@@ -60,6 +54,7 @@ body{
 
     width: 100%;
     height: 70%;
+
     /* background-color:saddlebrown; */
 }
 
@@ -90,18 +85,13 @@ body{
     margin-bottom: 2%;
     padding-left: 10%;
     transition: 1s;
+
     /* background-color: green; */
 }
 
 #img-exclama{
     vertical-align: text-bottom;
 }
-
-/* #Pie:hover{
-    color: red;
-    fill: red;
-
-} */
 
 #icon-exclama{
     transition: 1s;
@@ -131,26 +121,20 @@ button{
 
     width: 100%;
     height: 68px;
-    /* background-color: orange; */
     align-items: center;
+
+    /* background-color: orange; */
 }
 
 #btn-encript{
-
-border: none;
-
-background-color: #0A3871;
-
-margin-right: 5%;
-
-color: white;
-
-cursor: pointer;
+    border: none;
+    background-color: #0A3871;
+    margin-right: 5%;
+    color: white;
+    cursor: pointer;
 }
 
 #btn-desencript{
-
-    /* padding: 24px; */
     gap: 8px;
     border: 1px solid #0A3871;
     background-color: #D8DFE8;
@@ -160,7 +144,7 @@ cursor: pointer;
 }
 
 #Salidas{
-    display: inline;
+    /* display: inline; */
     width: 25%;
     height: 96vh;
     float: left;
@@ -169,37 +153,33 @@ cursor: pointer;
     margin-top: 1%;
     margin-left: -2%;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
     /* background-color: black; */
 }
 
-#Mensaje{
-    /* width: 270px; */
-    width: 90%;
-    /* height: 515px; */
-    height: 75.5%;
-
-    /* margin: 10% 0% 11% 10%; */
-    margin: 10% 0% 4% 5%;
-    /* padding-top: 50%;
-    padding-bottom: 50%; */
-    /* background-color: #FFFFFF; */
-    /* background-color: white; */
-    /* box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); */
-    /* border-radius: 32px; */
+.Salidas-sn-msg{
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
-#sn_msg{
-    /* display: block; */
+#Mensaje{
+    width: 90%;
+    /* height: 75.5%; */
+    height: 78.5%;
+
+    margin: 10% 0% 4% 5%;
+    /* background-color: white; */
+}
+
+/* #sn_msg{
     padding-top: 50%;
     padding-bottom: 50%;
-
-}
+} */
 
 #img-ilustracion{
-
     width: 100%;
     height: auto;
-
 }
 
 #msg-snTxt{
@@ -208,12 +188,7 @@ cursor: pointer;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    /* or 29px */
-
     text-align: center;
-
-    /* Gray/gray-500 */
-
     color: #343A40;
 }
 
@@ -223,16 +198,8 @@ cursor: pointer;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    /* or 24px */
-
     text-align: center;
-
-    /* Gray/gray-400 */
-
     color: #495057;
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 1;
@@ -244,14 +211,13 @@ cursor: pointer;
     display: none;
     width: 99%;
     height: 100%;
-    /* padding: 50%; */
+    /* height: 74vh; */
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    /* or 29px */
 
 }
 
@@ -281,9 +247,9 @@ cursor: pointer;
 
 @media screen and (max-height: 750px) {
 
-    #Pie{
-        /* background-color: green; */
-    }
+    /* #Pie{
+        background-color: green;
+    } */
 
     #Botones{
         /* background-color: pink; */
@@ -310,9 +276,9 @@ cursor: pointer;
         float: left;
     }
 
-    #Salidas{
-        /* background-color: black; */
-    }
+    /* #Salidas{
+        background-color: black;
+    } */
 
 }
 
@@ -468,9 +434,9 @@ cursor: pointer;
         height: 28px;
     }
 
-    #Entradas{
-        /* background-color: blue; */
-    }
+    /* #Entradas{
+        background-color: blue;
+    } */
 
     /* #Texto{
         background-color:saddlebrown;

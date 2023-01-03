@@ -72,10 +72,13 @@ function Encriptar() {
   // console.log(cadenaEncript.length)
 
   if (esValido && cadenaEncript.length != 0) {
-    // let msg = document.getElementById("Mensaje");
+    let salidas = document.getElementById("Salidas");
     let cn_msg = document.getElementById("cn_msg");
     let sn_msg = document.getElementById("sn_msg");
     let btnCopy = document.getElementById("btn-copiar");
+
+    salidas.style.display = "inline";
+    salidas.classList.remove("Salidas-sn-msg")
 
     sn_msg.style.display = "none";
 
@@ -94,13 +97,17 @@ function Encriptar() {
     // console.log("Incorrecto")
     if (cadena === "") {
       // console.log("VACIO")
+      let salidas = document.getElementById("Salidas");
       let cn_msg = document.getElementById("cn_msg");
       let sn_msg = document.getElementById("sn_msg");
       let btnCopy = document.getElementById("btn-copiar");
 
-      btnCopy.style.display = "none";
+      salidas.style.display = "grid";
+      salidas.classList.add("Salidas-sn-msg")
+
       cn_msg.style.display = "none";
       cn_msg.innerHTML = "";
+      btnCopy.style.display = "none";
 
       sn_msg.style.display = "block";
     } else {

@@ -18,8 +18,6 @@ body{
     bottom: 0;
     text-align: center;
     float: left;
-
-    /* background-color: red; */
 }
 
 #log-alu{
@@ -45,8 +43,6 @@ body{
     width: 65%;
     height: 98vh;
     float: left;
-
-    /* background-color: blue; */
 }
 
 #Texto{
@@ -54,8 +50,6 @@ body{
 
     width: 100%;
     height: 70%;
-
-    /* background-color:saddlebrown; */
 }
 
 #int-txt {
@@ -85,8 +79,6 @@ body{
     margin-bottom: 2%;
     padding-left: 10%;
     transition: 1s;
-
-    /* background-color: green; */
 }
 
 #img-exclama{
@@ -122,8 +114,6 @@ button{
     width: 100%;
     height: 68px;
     align-items: center;
-
-    /* background-color: orange; */
 }
 
 #btn-encript{
@@ -144,7 +134,6 @@ button{
 }
 
 #Salidas{
-    /* display: inline; */
     width: 25%;
     height: 96vh;
     float: left;
@@ -153,8 +142,6 @@ button{
     margin-top: 1%;
     margin-left: -2%;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-
-    /* background-color: black; */
 }
 
 .Salidas-sn-msg{
@@ -165,17 +152,10 @@ button{
 
 #Mensaje{
     width: 90%;
-    /* height: 75.5%; */
     height: 78.5%;
 
     margin: 10% 0% 4% 5%;
-    /* background-color: white; */
 }
-
-/* #sn_msg{
-    padding-top: 50%;
-    padding-bottom: 50%;
-} */
 
 #img-ilustracion{
     width: 100%;
@@ -211,7 +191,6 @@ button{
     display: none;
     width: 99%;
     height: 100%;
-    /* height: 74vh; */
 
     font-family: 'Inter';
     font-style: normal;
@@ -232,10 +211,6 @@ button{
     
 }
 
-/* #cn_msg{
-    display: none;
-} */
-
 #btn-copiar{
     display: none;
     border: 1px solid #0A3871;
@@ -247,14 +222,8 @@ button{
 
 @media screen and (max-height: 750px) {
 
-    /* #Pie{
-        background-color: green;
-    } */
-
     #Botones{
-        /* background-color: pink; */
         display: flex;
-        
         padding-top: 0%;
         align-items: center;
         text-align: center;
@@ -266,7 +235,6 @@ button{
         display: block;
         padding: 5%;
         float: left;
-
     }
 
     #btn-desencript{
@@ -275,11 +243,6 @@ button{
         padding: 5%;
         float: left;
     }
-
-    /* #Salidas{
-        background-color: black;
-    } */
-
 }
 
 @media screen and (max-height: 1025px) {
@@ -295,9 +258,6 @@ button{
 }
 
 @media screen and (max-width: 1300px) {
-    /* body {
-      background-color: lightgreen;
-    } */
 
     #Contenedor{
         width: 98%;
@@ -310,23 +270,17 @@ button{
         height: 100%;
         padding: 1% 0% 1% 1%;
         text-align: start;
-
-        /* background-color: red; */
     }
 
     #Entradas{
         width: 100%;
         height: 100%;
-
-        /* background-color: blue; */
     }
 
     #Texto{
 
         width: 100%;
         height: 55vh;
-
-        /* background-color:saddlebrown; */
     }
 
     #int-txt {
@@ -334,51 +288,27 @@ button{
         height: 100%;
         margin-top: 0%;
         padding-left: 1%;
-        /* height: 100%;
-        margin: 10%; */
-
     }
 
     #Pie{
         width: 100%;
         height: 3vh;
-        /* padding: 0% 0% 1% 1%; */
         padding-left: 1%;
         margin: 0%;
-        /* background-color: green; */
     }
 
     #Botones{
         width: 100%;
         height: 9vh;
         margin: auto;
-        /* padding-top: 0.5%; */
         padding-top: 1%;
-
-        /* background-color: pink; */
     }
-
-    /* #btn-encript{
-
-        margin-right: 5%;
-        margin-left: -8%;
-        margin: auto;
-        padding-top: auto;
-        margin: 0%;
-        padding: 0%;
-    } */
-
-    /* #btn-desencript{
-    } */
 
     #Salidas{
         width: 90%;
         height: 100%;
-        /* margin: auto; */
         margin-top: 1%;
         margin-left: 5.5%;
-        /* border-radius: 0%; */
-        /* background-color: black; */
     }
 
     #img-ilustracion{
@@ -389,28 +319,18 @@ button{
         width: 100%;
         height: 100%;
         padding: 2% 0% 2% 0%;
-        /* margin: 10% 0% 4% 5%; */
         margin: 0%;
     }
 
     #cn_msg{
         width: 98%;
         padding-left: 2%;
-
-        /* overflow: auto; */
-        word-wrap: break-word;
-        /* background-color: red; */
-
-        
+        word-wrap: break-word;      
     }
 
     #sn_msg{
-        /* display: block; */
-        /* padding-top: 2%; */
         word-wrap: break-word;
-        
         padding: 2% 0% 2% 0%;
-    
     }
 
     #btn-copiar{
@@ -420,36 +340,15 @@ button{
   }
 
   @media screen and (max-width: 709px) {
-    
-    /* body {
-      background-color: lightgreen;
-    } */
-
-    /* #Logo{
-        background-color: red;
-    } */
 
     #log-alu{
         width: 28px;
         height: 28px;
     }
 
-    /* #Entradas{
-        background-color: blue;
-    } */
-
-    /* #Texto{
-        background-color:saddlebrown;
-    } */
-
-    /* #Pie{
-        background-color: green;
-    } */
-
     #Botones{
         height: 10%;
         margin-bottom: 0%;
-        /* background-color: pink; */
     }
 
     #btn-encript{
@@ -457,9 +356,6 @@ button{
         width: 80%;
         margin: 1% 1% 2% 10%;
         padding: 3%;
-
-        /* background-color: chocolate; */
-
     }
 
     #btn-desencript{
@@ -467,37 +363,6 @@ button{
         width: 80%;
         margin: 1% 1% 1% 10%;
         padding: 3%;
-
-        /* background-color: salmon; */
     }
 
-    /* #Salidas{
-        background-color: black;
-    } */
 }
-
-/* @media not|only mediatype and (mediafeature and|or|not mediafeature) {
-    CSS-Code;
-} */
-
-/* body {
-    background-color: lightblue;
-  }
-  
-  @media screen and (min-width: 400px) {
-    body {
-      background-color: lightgreen;
-    }
-  }
-  
-    @media screen and (max-width: 600px) {
-    div.example {
-        display: none;
-    }
-    }
-
-  @media screen and (min-width: 800px) {
-    body {
-      background-color: lavender;
-    }
-  } */

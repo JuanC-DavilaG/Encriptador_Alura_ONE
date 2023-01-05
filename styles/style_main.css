@@ -1,0 +1,367 @@
+@import url("reset/style_reset.css");
+@import url("../assets/svgs/style_exclama.css");
+
+body{
+    background-color: #E5E5E5;
+}
+
+#contenedor{
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: 0.15fr 1fr 0.44fr;
+    grid-template-rows: 1fr 0.03fr;
+    grid-template-areas: 
+    "logo entradas salidas"
+    "autor autor autor";
+}
+
+#Logo{
+    padding-top: 10%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+
+    grid-area: logo;
+}
+
+#log-alu{
+    left: 70%;
+}
+
+#log-alu:hover{
+    animation: aparece 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparece {
+    from { 
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+
+#Entradas{
+
+    grid-area: entradas;
+
+    display: grid;
+    height: 100%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.01fr 0.1fr;
+    grid-template-areas: 
+    "ent-txt"
+    "instruccion"
+    "botones";
+}
+
+#int-txt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    resize: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+
+    margin-top: 7%;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    
+    grid-area: ent-txt;
+}
+
+#int-txt::-webkit-scrollbar {
+    display: none;
+}
+
+#instrucciones{
+    padding-left: 2%;
+
+    color: #495057;
+    transition: 1s;
+
+    grid-area: instruccion;
+}
+
+#img-exclama{
+    vertical-align: text-bottom;
+}
+
+#instrucciones:hover{
+    transition: 1s;
+    color: red;
+
+}
+
+#botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    grid-area: botones;
+}
+
+button{
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    
+    margin: 2px 0px 2px 0px;
+}
+
+#btn-encript{
+
+    border: none;
+    background-color: #0A3871;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-desencript{
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+#Salidas{
+    height: 97vh;
+    grid-area: salidas;
+}
+
+#msgs-salidas{
+    display: grid;
+    width: 95%;
+    height: 98%;
+    margin-top: 15px;
+    margin-left: 12px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background-color: #FFFFFF;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.15fr;
+    grid-template-areas: 
+    "cn_msg"
+    "btn_copy";
+}
+
+.Salidas-sn-msg{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#Mensaje{
+    overflow: auto;
+    width: 90%;
+    max-height: 100%;
+    padding: 5%;
+}
+
+#img-ilustracion{
+    width: 100%;
+    height: auto;
+}
+
+#msg-snTxt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+#pre-encript-txt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#cn_msg{
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    overflow: auto;
+
+    word-break:break-all;
+
+    grid-area: cn_msg;
+}
+
+#cn_msg::-webkit-scrollbar {
+    display: none;
+}
+
+#Copia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#btn-copiar{
+    display: none;
+    border: 1px solid #0A3871;
+    color:#0A3871;
+    cursor: pointer;
+
+    grid-area: btn_copy;
+}
+
+#Autor{
+    padding-left: 2%;
+
+    grid-area: autor;
+}
+
+@media only screen and (max-width: 1050px){
+
+    #contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.2fr 0.01fr;
+        grid-template-areas: 
+        "logo"
+        "entradas"
+        "salidas"
+        "autor";
+    }
+
+    #Logo{
+        padding: 1% 0% 0% 2%;
+        text-align: initial;
+    }
+
+    #int-txt{
+        margin-top: 0%;
+    }
+
+    #Salidas{
+        height: auto;
+        padding: 7px;
+    }
+
+    #msgs-salidas{
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        
+    }
+
+    #Mensaje{
+        width: 100%;
+        padding: 0%;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #img-ilustracion{
+        display: none;
+    }
+
+    #cn_msg{
+        width: 95%;
+    }
+
+    #Copia{
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 655px){
+
+    #botones{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+}
+
+@media only screen and (max-width: 330px){
+
+    #log-alu{
+        width: 16;
+        height: 24;
+    }
+
+    #int-txt{
+        font-size: 25px;
+    }
+
+    #img-exclama{
+        width: 14px;
+        height: 14px;
+    }
+
+    #instrucciones{
+        font-size: 14px;
+    }
+
+    button{
+        width: 20vh;
+        height: 8vh;
+    }
+
+    #msg-snTxt{
+        font-size: 20px;
+    }
+    
+    #pre-encript-txt{
+        font-size: 13px;
+    }
+
+    #Autor{
+        font-size: 13px;
+    }
+
+}

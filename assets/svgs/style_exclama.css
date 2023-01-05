@@ -1,0 +1,10 @@
+@import url("../../styles/style_main.css");
+
+#icon-exclama{
+    transition: 1s;
+}
+
+#icon-exclama:hover{
+    transition: 1s;
+    fill: red;
+}

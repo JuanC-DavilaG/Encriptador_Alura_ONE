@@ -20,10 +20,6 @@ function validador() {
 function Encriptar() {
   let cadena = document.getElementById("int-txt").value;
 
-  // console.log(cadena)
-
-  // if(patron.test(cadena)){
-
   let cadenaEncript = "";
   let ascii = "";
   let esValido = true;
@@ -31,14 +27,11 @@ function Encriptar() {
   for (letra of cadena) {
     ascii = letra.toUpperCase().charCodeAt(0);
 
-    // esValido = ((ascii>=65 && ascii<=90 || ascii === 209 || ascii === 32 || ascii === 10) && (letra === letra.toLowerCase())) ? esValido && true : esValido && false
     esValido =
       (192 > ascii || 221 < ascii || ascii === 209) &&
       letra === letra.toLowerCase()
         ? esValido && true
         : esValido && false;
-
-    // console.log(letra + " " + esValido)
 
     if (!esValido) break;
 
@@ -68,17 +61,13 @@ function Encriptar() {
     }
   }
 
-  // console.log(esValido)
-  // console.log(cadenaEncript.length)
-
   if (esValido && cadenaEncript.length != 0) {
-    let salidas = document.getElementById("Salidas");
+    let msg = document.getElementById("Mensaje");
     let cn_msg = document.getElementById("cn_msg");
     let sn_msg = document.getElementById("sn_msg");
     let btnCopy = document.getElementById("btn-copiar");
 
-    salidas.style.display = "inline";
-    salidas.classList.remove("Salidas-sn-msg")
+      msg.classList.remove("Salidas-sn-msg")
 
     sn_msg.style.display = "none";
 
@@ -89,21 +78,18 @@ function Encriptar() {
 
     cn_msg.innerHTML = cadenaEncript;
 
-    // cn_msg.style.display = 'inline'
-
     cn_msg.style.display = "block";
     btnCopy.style.display = "inline";
   } else {
     // console.log("Incorrecto")
     if (cadena === "") {
       // console.log("VACIO")
-      let salidas = document.getElementById("Salidas");
+      let msg = document.getElementById("Mensaje");
       let cn_msg = document.getElementById("cn_msg");
       let sn_msg = document.getElementById("sn_msg");
       let btnCopy = document.getElementById("btn-copiar");
 
-      salidas.style.display = "grid";
-      salidas.classList.add("Salidas-sn-msg")
+      msg.classList.add("Salidas-sn-msg")
 
       cn_msg.style.display = "none";
       cn_msg.innerHTML = "";
@@ -127,14 +113,11 @@ function Desencriptar() {
   for (letra of cadena) {
     ascii = letra.toUpperCase().charCodeAt(0);
 
-    // esValido = ((ascii>=65 && ascii<=90 || ascii === 209 || ascii === 32 || ascii === 10) && (letra === letra.toLowerCase())) ? esValido && true : esValido && false
     esValido =
       (192 > ascii || 221 < ascii || ascii === 209) &&
       letra === letra.toLowerCase()
         ? esValido && true
         : esValido && false;
-
-    // console.log(letra + " " + esValido)
 
     if (!esValido) break;
 
@@ -173,13 +156,13 @@ function Desencriptar() {
     }
   }
 
-  // console.log(cadenaDesncript)
-
   if (esValido && cadenaDesncript.length != 0) {
-    // let msg = document.getElementById("Mensaje");
+    let msg = document.getElementById("Mensaje");
     let cn_msg = document.getElementById("cn_msg");
     let sn_msg = document.getElementById("sn_msg");
     let btnCopy = document.getElementById("btn-copiar");
+
+    msg.classList.remove("Salidas-sn-msg")
 
     sn_msg.style.display = "none";
 
@@ -193,12 +176,13 @@ function Desencriptar() {
     cn_msg.style.display = "block";
     btnCopy.style.display = "inline";
   } else {
-    // console.log("Incorrecto")
     if (cadena === "") {
-      // console.log("VACIO")
+      let msg = document.getElementById("Mensaje");
       let cn_msg = document.getElementById("cn_msg");
       let sn_msg = document.getElementById("sn_msg");
       let btnCopy = document.getElementById("btn-copiar");
+
+      msg.classList.add("Salidas-sn-msg")
 
       btnCopy.style.display = "none";
       cn_msg.style.display = "none";
@@ -222,5 +206,3 @@ function Copiar() {
   var res = document.execCommand("copy");
   window.getSelection().removeRange(seleccion);
 }
-
-// String.fromCharCode(200)
